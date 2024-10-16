@@ -15,9 +15,14 @@ To construct a 4-bit adder, need to chain together four 1-bit full adders. Each 
 
 To design a 1-bit full adder, the first step is to create a truth table that represents all possible combinations of the inputs (A, B, and CIN) and the corresponding outputs (Sum(S) and COUT).
 
+![image](https://github.com/user-attachments/assets/43248e76-af7c-48b8-bde5-2a775d7f9c69)
+
+
 ![image](https://github.com/user-attachments/assets/716a26b6-a449-42e0-9e2d-cdbaa4b291b9)
 
 Here’s the truth table for a 1-bit full adder:
+![image](https://github.com/user-attachments/assets/ed9a818e-b668-4377-9fde-f12ff8abe167)
+
 
 ![tt](https://github.com/user-attachments/assets/0b3ab24f-1d7e-4a01-80ce-5e7406f4082b)
 
@@ -34,6 +39,8 @@ Where ⊕ represents XOR.
 3.	Carry out (COUT):
    
 COUT=(A&B) | (CIN&(A^B))
+
+![image](https://github.com/user-attachments/assets/60663bb4-22bf-44b4-ba12-ddee933a2267)
 
 ![image](https://github.com/user-attachments/assets/7d6fa554-2614-4f19-aa68-65c9e6153caa)
 
@@ -71,6 +78,8 @@ Developed by: Register Number*/
       (The path of cshrc could vary depending on the installation destination)
       
 	After this you can see the window like below 
+![image](https://github.com/user-attachments/assets/e11112c3-b943-47b2-ac1e-35cba9c51f93)
+
 
 ### Fig 3:Invoke the Cadence Environment
 
@@ -83,12 +92,16 @@ or
 •	linux:/> nclaunch& // On subsequent calls to NCVERILOG 
 
 	It will invoke the nclaunch window for functional simulation we can compile,elaborate and simulate it using Multiple Step .
+![image](https://github.com/user-attachments/assets/cb5a170e-7c7c-4ed1-bf5f-b30063c3aed6)
+
 
 ### Fig 4:Setting Multi-step simulation
 
 	Select Multiple Step and then select “Create cds.lib File” .
 
 	Click the cds.lib file and save the file by clicking on Save option 
+![image](https://github.com/user-attachments/assets/cdc4fee2-4c90-471a-aa75-016b8e9394f7)
+
 
 ### Fig 5:cds.lib file Creation
 
@@ -99,6 +112,8 @@ or
 •	We are simulating verilog design without using any libraries 
 
 •	A Click “OK” in the “nclaunch: Open Design Directory” window as shown in below figure 
+![image](https://github.com/user-attachments/assets/7c08231a-609a-4eb0-b042-173deb64f559)
+
 
 ![image](https://github.com/user-attachments/assets/781b297a-11e9-4140-89c5-ee3b0d15bbd4)
 
@@ -113,6 +128,7 @@ or
 	To perform the function simulation, the following three steps are involved Compilation, Elaboration and Simulation. 
 
 ### Fig 7: Nclaunch Window
+![Screenshot 2024-09-23 143300](https://github.com/user-attachments/assets/4dcba223-e7c5-46b8-bd65-6e544eb75472)
 
 ## Step 1: Compilation:– Process to check the correct Verilog language syntax and usage 
 
@@ -138,6 +154,8 @@ i.e Cadence IES command for compile: ncverilog +access+rwc -compile fa.v
 	Select the test bench and compile it. It will come under worklib. Under Worklib you can see the module and test-bench. 
 
 	The cds.lib file is an ASCII text file. It defines which libraries are accessible and where they are located. It contains statements that map logical library names to their physical directory paths. For this Design, you will define a library called “worklib”
+![image](https://github.com/user-attachments/assets/df931cf7-2161-4049-b3ea-5366f926f0bb)
+
 
 ## Step 2: Elaboration:– To check the port connections in hierarchical design 
 	Inputs: Top level design / test bench Verilog codes 
@@ -155,6 +173,8 @@ i.e Cadence IES command for compile: ncverilog +access+rwc -compile fa.v
 	After elaboration the file will come under snapshot. Select the test bench and elaborate it.
 
 ### Fig 9: Elaboration Launch Option
+![Screenshot 2024-09-23 143235](https://github.com/user-attachments/assets/0ce6ba3a-9f46-467c-953d-bceb62615205)
+
 
 ## Step 3: Simulation: – Simulate with the given test vectors over a period of time to observe the output behaviour. 
 
@@ -167,10 +187,16 @@ i.e Cadence IES command for compile: ncverilog +access+rwc -compile fa.v
 	Steps for simulation – Run the simulation command with simulator options
 
 ### Fig 10: Design Browser window for simulation
+![Screenshot 2024-10-16 182011](https://github.com/user-attachments/assets/81fc3756-cb37-40e9-95e3-a1a26cb38bb5)
+
 
 ### Fig 11: Launching Simulation Waveform WindowSimulation Waveform Window
+![Screenshot 2024-10-16 182409](https://github.com/user-attachments/assets/fc201c75-4757-4d7e-a02c-9bc60936516e)
+
 
 ### Fig 12: Simulation Waveform Window
+![Screenshot 2024-09-23 145238](https://github.com/user-attachments/assets/59971c7c-dc90-4a84-ac51-c246212a1d94)
+
 
 
 
