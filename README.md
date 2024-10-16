@@ -15,14 +15,9 @@ To construct a 4-bit adder, need to chain together four 1-bit full adders. Each 
 
 To design a 1-bit full adder, the first step is to create a truth table that represents all possible combinations of the inputs (A, B, and CIN) and the corresponding outputs (Sum(S) and COUT).
 
-![image](https://github.com/user-attachments/assets/43248e76-af7c-48b8-bde5-2a775d7f9c69)
-
-
 ![image](https://github.com/user-attachments/assets/716a26b6-a449-42e0-9e2d-cdbaa4b291b9)
 
 Here’s the truth table for a 1-bit full adder:
-![image](https://github.com/user-attachments/assets/ed9a818e-b668-4377-9fde-f12ff8abe167)
-
 
 ![tt](https://github.com/user-attachments/assets/0b3ab24f-1d7e-4a01-80ce-5e7406f4082b)
 
@@ -39,8 +34,6 @@ Where ⊕ represents XOR.
 3.	Carry out (COUT):
    
 COUT=(A&B) | (CIN&(A^B))
-
-![image](https://github.com/user-attachments/assets/60663bb4-22bf-44b4-ba12-ddee933a2267)
 
 ![image](https://github.com/user-attachments/assets/7d6fa554-2614-4f19-aa68-65c9e6153caa)
 
@@ -111,8 +104,7 @@ or
 
 •	We are simulating verilog design without using any libraries 
 
-•	A Click “OK” in the “nclaunch: Open Design Directory” window as shown in below figure 
-![image](https://github.com/user-attachments/assets/7c08231a-609a-4eb0-b042-173deb64f559)
+•	A Click “OK” in the “nclaunch: Open Design Directory” window as shown in below figure
 
 
 ![image](https://github.com/user-attachments/assets/781b297a-11e9-4140-89c5-ee3b0d15bbd4)
